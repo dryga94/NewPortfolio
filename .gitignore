@@ -1,0 +1,7 @@
+dist/*.html
+dist/css/
+src/css/*.*
+src/css/*/*.css
+src/html/*.*
+prepros-6.config
+.vscode/*.*
