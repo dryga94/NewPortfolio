@@ -5,3 +5,4 @@ src/css/*/*.css
 src/html/*.*
 prepros-6.config
 .vscode/*.*
+src
