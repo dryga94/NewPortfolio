@@ -6,4 +6,4 @@ src/html/*.*
 prepros-6.config
 .vscode/*.*
 src
-README.html
+README.md
