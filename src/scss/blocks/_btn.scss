@@ -1,0 +1,60 @@
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    &--social{
+        color: white;
+        background-color:black;
+        width: 24px;
+        height: 24px;
+        font-size: 14px;   
+        border-radius: 3px;
+    }
+    &--facebook {
+        background-color: #4163a7;
+    }
+    &--behance{
+        background-color: #48cced;
+    }
+    &--print{
+        background-color: #f1392a;
+    }
+    &--google{
+        background-color: #d14d25;
+    }
+    &--dribble{
+        background-color: #ff88cf;
+    }
+    &--twitter {
+        background-color: #30b1e4;
+    }
+    &--vk {
+        background-color: #597da3;
+    }
+    &--info {
+        position: relative;
+        color: white;
+        background-color: $pr;
+        height: 90px;
+        width: 90px;
+        font-size: 28px;
+        line-height: 1;
+        &:before {
+            content: '';
+            position: absolute;
+            background-color: transparent;
+            width: 61px;
+            height: 61px;
+            border: 1px solid white;
+            border-radius: 50%;
+        }
+        &:hover {
+            &:before  {
+                cursor: pointer;
+                animation: pulse 0.3s linear infinite;
+            }   
+        }
+    }
+}
+

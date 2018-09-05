@@ -1,0 +1,1 @@
+$(".js-dropdown").on("click",function(){$(".js-dropdown__body").slideToggle()}),$(document).mouseup(function(o){var d=$(".js-dropdown__body");d.is(o.target)||$(".js-dropdown").is(o.target)||0!==d.has(o.target).length||d.slideUp()});

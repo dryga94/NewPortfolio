@@ -1,0 +1,22 @@
+.logoholder {
+    background-color: white;
+    margin: 0 -25px;
+    padding-top: 30px;
+    padding-bottom: 55px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.logo {
+    box-sizing: border-box;
+    &--sub{
+        position: absolute;
+        top: 55%;
+        left: 41%;
+    }
+    &__link{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}

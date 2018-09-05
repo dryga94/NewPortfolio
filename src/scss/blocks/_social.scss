@@ -1,0 +1,18 @@
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0;
+    &__item{
+        list-style: none;
+        &:hover {
+            animation-name: shake;
+            animation-duration: 0.2s;
+            animation-timing-function: linear;
+            animation-iteration-count: 2;
+        }
+    }
+    &__item + &__item {
+        margin-left: 10px;
+    }
+}

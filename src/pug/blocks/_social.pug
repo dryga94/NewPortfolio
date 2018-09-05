@@ -1,0 +1,3 @@
+ul.social
+    each val, index in [[[ 'social', 'vk'],['fab','fa-vk']],[[ 'social', 'google'],['fab','fa-google-plus-g']], [[ 'social', 'twitter'],['fab','fa-twitter']],[[ 'social', 'print'],['fab','fa-pinterest-p']],[[ 'social', 'dribble'],['fab','fa-dribbble']],[['social', 'behance'],['fab','fa-behance']],[['social', 'facebook'],['fab','fa-facebook-f']]]
+        li.social__item: +soc_btn(val[0], val[1])

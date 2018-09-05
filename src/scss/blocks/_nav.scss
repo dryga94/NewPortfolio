@@ -1,0 +1,67 @@
+.nav {
+    width: 300px;
+    height: 100vh;
+    background-color: #242b2e;
+    padding: 0 25px;
+    position: relative;
+    &--shadow{
+        z-index: 3;
+        box-shadow: 17px 0 50px rgba(0, 0, 0, 0.6)
+    }
+    &__list{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 20px;
+        margin-left: -25px;
+        margin-right: -25px;
+        padding: 0;
+        &:hover {
+            .nav__item--active {
+                background-color: #2f373b;
+                background-image: linear-gradient(to top, transparent 0%, transparent 100%);
+                &:hover, &:focus {
+                    background-color: #1ab5b3;
+                    cursor: pointer;
+                    background-image: linear-gradient(to top, #18a3a1 0%, #31bdbb 100%);
+                }
+            }
+        }
+    }
+    &__link{
+        text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
+        color: white;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.8;
+        text-transform: uppercase;
+        width: 100%;
+        display: block;
+        padding: 15px 25px;
+        box-sizing: border-box;
+       
+    }
+    &__item{
+        box-sizing: border-box;
+        text-align: right;
+        background-image: linear-gradient(to top, #2e3539 0%, #333b3f 100%);
+        &--active{
+            background-color: #1ab5b3;
+            cursor: pointer;
+            background-image: linear-gradient(to top, #18a3a1 0%, #31bdbb 100%);
+        }
+        &:hover, &:focus {
+            background-color: #1ab5b3;
+            cursor: pointer;
+            background-image: linear-gradient(to top, #18a3a1 0%, #31bdbb 100%);
+        }
+    }
+    &__copyright{
+        text-align: right;
+        color: #6b7072;
+        font-size: 12px;
+        font-weight: 100;
+        line-height: 2;
+    }
+}

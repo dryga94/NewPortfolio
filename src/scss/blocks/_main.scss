@@ -1,0 +1,89 @@
+.main{
+    max-height: 100vh;  
+    overflow-y: scroll;
+    width: 100%;
+    &__holder{
+        width: 100%;
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            padding-top: 76%;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+    &__link{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s linear ;
+        &:hover{
+            .main__img{
+                display: none;
+            }
+            .main__appear{
+                display: flex;
+                &:hover {
+                    .main__swiper{
+                        transform: translateX(0);
+                    }
+                    .main__icon{
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+    &__appear{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: $pr;
+       
+    }
+    &__icon{
+        position: relative;
+        height: 60px;
+        width: 60px;
+        border: 1px solid white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 18px;
+        transform: translateX(500%);
+        transition: 1s ease transform;
+        transition-delay: 0.3s;
+        &:hover{
+            background-color: #fff;
+            color: $pr;
+        }
+    }
+    &__text {
+        text-align: center;
+        padding-bottom: 18px;
+        border-bottom: 1px solid white;
+    }
+    &__swiper{
+        transform: translateX(200%);
+        transition: 1s ease transform;
+    }
+}

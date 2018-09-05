@@ -1,0 +1,51 @@
+.filter{
+    text-align: right;
+    margin-bottom: 54px;
+    &__header{
+        text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
+        color: $pr;
+        font-size: 19px;
+        font-weight: 100;
+        line-height: 1.7;
+        
+        & i{
+            font-size: 18px;
+            margin-left: 13px;
+            text-shadow: none;
+        }
+    }
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 13px;
+        margin-bottom: 0;
+       
+    }
+    &__item{
+        text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.9;
+        color: #6b7072;
+        &:hover {
+            cursor: pointer;
+            color: white;
+        }
+    }
+    &__radio{
+        display: none;
+        &:checked + .filter__item{
+            color: white;
+        }
+    }
+    &:after{
+        position: absolute;
+        display: block;
+        content: '';
+        height: 1px;
+        background-color: #1e282b;
+        width: 100%;
+        margin: 24px -25px;
+
+    }
+}
