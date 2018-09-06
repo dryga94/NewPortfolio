@@ -108,7 +108,7 @@
 .scrollbar-inner > .scroll-element.scroll-y {
     height: 80%;
     right: 10px;
-    top: 12%;
+    top: 95px;
     width: 20px;
 }
 
@@ -133,9 +133,9 @@
 }
 
 .scrollbar-inner > .scroll-element .scroll-element_track { background-color: transparent; }
-.scrollbar-inner > .scroll-element .scroll-bar { background-color: #242b2e; }
+.scrollbar-inner > .scroll-element .scroll-bar { background-color:#2f373b; }
 .scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: #242b2e; }
-.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: #1ab5b3; opacity: 1; }
+.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: #1ab5b3; opacity: 0.8; }
 
 
 /* update scrollbar offset if both scrolls are visible */

@@ -1,0 +1,26 @@
+.form  
+    form.form__contact(action="get")
+        .form__text
+            h2 Get in touch with us
+            p   Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+            .form__line
+            h2 Send us a message
+        .row.row--nogutters
+            .col.col--2
+                .form__wrapper
+                    input.form__input.form__input--noborder(type="text", name="Name", id='name', placeholder='Name')
+                    label.form__label(for="name")
+                        i.fas.fa-user
+                .form__wrapper
+                    input.form__input.form__input--noborder(type="email", name="website",id='email', placeholder='e-mail')
+                    label.form__label(for="email")
+                        i.far.fa-envelope
+                .form__wrapper
+                    input.form__input.form__input--noborder(type="text", name="website", id='website', placeholder='website')
+                    label.form__label(for="website")
+                        i.fas.fa-link
+            .col.col--2
+                .form__wrapper.form__wrapper--right
+                    textarea.form__input(name="",  placeholder='Message', wrap='soft', rows='5')
+                .form__wrapper.form__wrapper--right
+                    a.btn.btn--submit(href="javascript:void(0)") Send now!

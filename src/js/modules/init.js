@@ -3,5 +3,8 @@ document.addEventListener("DOMContentLoaded", function (event){
         $('.scrollbar-inner').scrollbar();
         console.log('ready');
     }
-
+    if ($('.scrollbar-outer').length) {
+        $('.scrollbar-outer').scrollbar();
+        console.log('ready');
+    }
 });
