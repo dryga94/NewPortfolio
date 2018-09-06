@@ -651,7 +651,8 @@ template {
     height: 100%; }
 
 .main {
-  width: 100%; }
+  width: 100%;
+  max-height: 100vh; }
   .main__holder {
     width: 100%;
     position: relative; }
