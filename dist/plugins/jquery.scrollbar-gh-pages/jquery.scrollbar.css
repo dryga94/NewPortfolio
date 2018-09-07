@@ -95,7 +95,7 @@
     height: 100%;
     left: 0;
     top: 0;
-    width: 20px;
+    width: 15px;
 }
 
 .scrollbar-inner > .scroll-element.scroll-x {
@@ -107,9 +107,9 @@
 
 .scrollbar-inner > .scroll-element.scroll-y {
     height: 80%;
-    right: 10px;
+    right: 5px;
     top: 95px;
-    width: 20px;
+    width: 15px;
 }
 
 .scrollbar-inner > .scroll-element .scroll-element_outer {
@@ -129,7 +129,7 @@
 .scrollbar-inner > .scroll-element .scroll-bar {
     /* -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
     filter: alpha(opacity=40); */
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 .scrollbar-inner > .scroll-element .scroll-element_track { background-color: transparent; }

@@ -7,13 +7,6 @@
     padding: 30px;
     &__text{
         padding-bottom: 23px;
-        & p {
-            color: #a3a3a3;
-            font-size: 18px;
-            font-weight: 300;
-            line-height: 2.1;
-            padding-top: 10px;
-        }
     }
     &__line{
         padding-top: 26px;
@@ -64,6 +57,7 @@
         outline: none;
         padding: 21px 15px;
         resize: none;
+        color: #a3a3a3;
         &:focus  {
             border-color: $pr;
             & + .form__label{

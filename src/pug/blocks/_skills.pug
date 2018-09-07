@@ -1,0 +1,27 @@
+.col.col--2
+    .col.col--1
+        .skills
+            .skills__progress
+                h2 Our skills
+                .skills__level 
+                    .skills__name Website Design
+                    .skills__percentage 89%
+                progress(value="89" max="100") 
+                .skills__level 
+                    .skills__name Website Development
+                    .skills__percentage 97%
+                progress(value="97" max="100")
+                .skills__level 
+                    .skills__name Plugins
+                    .skills__percentage 86%
+                progress(value="86" max="100")
+                .skills__level 
+                    .skills__name Front End
+                    .skills__percentage 86%
+                progress(value="76" max="100")
+            include ./_testimonals.pug
+            .skills__services
+                h2 Service
+                ul.skills__table
+                    each val in [['point','Web design'],['point','Web design'],['point','Web design'],['point','Web design'],['point','Web design'],['point','Web design']]
+                        +list(val[0],val[1])

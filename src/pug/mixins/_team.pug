@@ -1,0 +1,10 @@
+mixin team(img, name, prof)
+    .col.col--3
+        .main__holder.main__holder--team
+            a.main__link(href="javascript:void(0)")
+                img.main__img(src="./img/about/" + img + '.jpg')
+                .main__appear
+                    .main__swiper
+                        h4 ${name}
+                        .main__text.main__text--nobr
+                            p prof

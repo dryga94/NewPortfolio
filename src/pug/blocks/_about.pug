@@ -1,0 +1,14 @@
+.col.col--2
+    .col.col--1
+        .about__imgwrapper
+            img.about__img(src="./img/about/head.jpg")
+        .about__info
+            h2 Who we are
+            p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+            p Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. 
+        h2 Our stuff
+        .row.row--small 
+            each val in [['bart','Bart Simpson', 'Python' ],['lisa','Lisa Simpson', 'front-end' ],['homer','Homer Simpson', 'Back-end' ],['marge','Marge Simpson', 'design' ],['mag','Maggie Simpson', 'photo' ],['apu','Apu', 'doing something' ]]
+                +team(val[0],val[1], val[2])
+            
+    

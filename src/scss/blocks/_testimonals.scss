@@ -1,0 +1,33 @@
+.testimonals{
+    margin-top: 32px;
+    &__wrapper{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex: 1;
+    }
+    &__ico{
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__position{
+        background-color: $pr;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 25px;
+        color: white;
+        font-size: 15px;
+        font-style: italic;
+        line-height: 1.8;
+    }
+    &__comment{
+        border: 1px solid #ececec;
+        border-top: none;
+        padding: 0 30px;
+        padding-bottom: 22px;
+        padding-top: 15px;
+    }
+}
