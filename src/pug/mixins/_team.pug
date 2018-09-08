@@ -5,6 +5,6 @@ mixin team(img, name, prof)
                 img.main__img(src="./img/about/" + img + '.jpg')
                 .main__appear
                     .main__swiper
-                        h4 ${name}
+                        h4= name
                         .main__text.main__text--nobr
-                            p prof
+                            p= prof

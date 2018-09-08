@@ -4,13 +4,15 @@
     background-color: #242b2e;
     padding: 0 25px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     &--shadow{
         z-index: 3;
         box-shadow: 17px 0 50px rgba(0, 0, 0, 0.6)
     }
     &__list{
         display: flex;
-        flex: 1;
         flex-direction: column;
         margin-top: 0;
         margin-bottom: 20px;

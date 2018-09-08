@@ -50,6 +50,7 @@
         }
     }
     &__appear{
+        display: flex;
         position: absolute;
         top: 0;
         left: 0;
@@ -100,5 +101,6 @@
     &__swiper{
         transform: translateX(200%);
         transition: 1s ease transform;
+        text-align: center;
     }
 }
