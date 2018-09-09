@@ -1,0 +1,21 @@
+.tag{
+    color: $sec;
+    font-size: 13px;
+    line-height: 2.5;
+    border: 1px solid #dbdbdb;
+    border-radius: 15px;
+    padding: 6px 17px;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: 0.3s linear;
+    &:hover{
+        border-color: $pr;
+        color: $pr;
+    }
+    &:active{
+        background-color: $pr;
+        color: white;
+        font-size: 600;
+    }
+}

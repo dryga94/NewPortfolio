@@ -1,0 +1,28 @@
+.projectinfo{
+    &__item{
+        color: #848484;
+        font-size: 14px;
+        line-height: 2.1;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        border-bottom: 1px solid $sec;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    &__icon{
+        height: 32px;
+        width: 32px;
+        border: 1px solid $pr;
+        border-radius: 50%;
+        color: #1ab5b3;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: -1;
+        margin-right: 15px;
+    }
+}

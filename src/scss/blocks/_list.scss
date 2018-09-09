@@ -5,4 +5,12 @@
     &--point{
         list-style: disc;
     }
+    &--check{
+        display: flex;
+        align-items: center;
+        & i{
+            order: -1;
+            margin-right: 10px;
+        }
+    }
 }

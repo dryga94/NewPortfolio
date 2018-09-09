@@ -6,5 +6,41 @@
     display: flex;
     flex: 1;
     flex-wrap: nowrap;
-    
+    &__text{
+        margin-top: 21px;
+        padding-bottom: 21px;
+        border-bottom: 1px solid  #a3a3a3;
+        & p + p {
+            margin-top: 23px;
+        }
+        & h2 + p {
+            margin-top: 8px;
+        }
+    }
+    &__related{
+        margin-top: 25px;
+        padding-bottom: 12px;
+        & h2 + * {
+            margin-top: 22px;
+        }
+    }
+    &__gallery{
+        margin-top: 17px;
+        padding-bottom: 32px;
+    }
+    &__tags{
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        margin-top: 13px;
+        padding-bottom: 32px;
+    }
+    &__features{
+        padding: 0;
+    }
+    &__info{
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 28px;
+    }
 }

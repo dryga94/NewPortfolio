@@ -1,3 +1,31 @@
 .col.col--2
     .col.col--1
-        include ./_slider.pug
+        include ./_swiper.pug
+        .work__text
+            h2 Heavy Sand - Creative photography
+            p Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+            p Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. 
+        .work__related
+            h2 Related projects
+            .row.row--nogutters
+                each val in ['14','12','18']
+                    +work2(val)
+.col.col--2
+    .col.col--1
+        h2 Project info
+        ul.work__info
+            each val in [['premiumplayers','fas','fa-user'],['138 likes','fas','fa-heart'],['25 December, 2013','far','fa-calendar'],['4 Comments','fas','fa-comments']]
+                +projectinfo(val[0], val[1], val[2])
+        h2 Tags
+        .work__tags 
+            each val in ['web design','photography','development','php','ecommerce','graphic']
+                +tags(val)
+        h2 Project gallery
+        .work__gallery
+            .row.row--extrasmall
+                each val in ['1', '13', '15','19','4','9','14','7','16','20']
+                    +gallery(val)
+        h2 Projects Fetures
+        ul.work__features
+            each val in [['check','Responsive Layout', 'fa-check'],['check','Font awesome icons', 'fa-check'],['check','Clean and commented code', 'fa-check'],['check','Pixel perfect design', 'fa-check'],['check','Highly Customizable', 'fa-check']]
+                    +list(val[0],val[1],val[2])
