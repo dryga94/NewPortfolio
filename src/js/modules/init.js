@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function (event){
+  DEBUG = true
+  // SCROLLBAR INIT
+
+
     if ($('.scrollbar-inner').length) {
         $('.scrollbar-inner').scrollbar();
         console.log('ready');
@@ -8,8 +12,22 @@ document.addEventListener("DOMContentLoaded", function (event){
         console.log('ready');
     }
 
-    var galleryTop = new Swiper('.gallery-top', {
+    // SWIPER INIT
+
+    if ($('.gallery-top').length) {
+      var galleryTop = new Swiper('.gallery-top', {
+          slidesPerView: 1,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+        galleryTop.controller.control = galleryTop;
+    }
+    if ($('.gallery-thumbs').length & $('.gallery-top').length) {
+      var galleryTop = new Swiper('.gallery-top', {
         slidesPerView: 1,
+        autoHeight: true,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -22,28 +40,25 @@ document.addEventListener("DOMContentLoaded", function (event){
         touchRatio: 0.2,
         slideToClickedSlide: true,
       });
-      var galleryTop = new Swiper('.gallery-blog', {
-        slidesPerView: 1,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-
-      galleryTop.controller.control = galleryThumbs;
       galleryThumbs.controller.control = galleryTop;
+      galleryTop.controller.control = galleryThumbs;
+    }
 
-      wow = new WOW(
-        {
-        boxClass:     'wow',      // default
-        animateClass: 'animated', // default
-        offset:       0,          // default
-        mobile:       true,       // default
-        live:         true        // default
-      }
-      )
-      wow.init();
-      console.log('readywow');
+
+      
+      
+
+      // wow = new WOW(
+      //   {
+      //   boxClass:     'wow',      // default
+      //   animateClass: 'animated', // default
+      //   offset:       0,          // default
+      //   mobile:       true,       // default
+      //   live:         true        // default
+      // }
+      // )
+      // wow.init();
+      // console.log('readywow');
 
 
       
