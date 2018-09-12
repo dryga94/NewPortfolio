@@ -3,6 +3,9 @@
     background-color: #b4b7b8;
     width: 100%;
     max-height: 100vh;
+    &--small{
+        padding: 15px;
+    }
 }
 .row{
     display: flex;
@@ -25,6 +28,7 @@
 .col {
     &--5 {
         width: 20%;
+        padding: 12.5px;
     }
     &--4 {
         width: 25%;

@@ -50,6 +50,20 @@
                 opacity: 1;
             }
         }
+        &-prim{
+            background-color: $pr;
+            opacity: 1;
+            height: 43px !important;
+            width: 43px !important;
+            background-size: 8px 17px !important;
+            
+        }
+        &-next-prim{
+            right: 0 !important;
+        }
+        &-prev-prim{
+            left: 0 !important;
+        }
     }
 }
 .gallery-top{

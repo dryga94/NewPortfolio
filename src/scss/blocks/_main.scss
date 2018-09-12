@@ -40,7 +40,7 @@
                 display: flex;
                 &:hover {
                     .main__swiper{
-                        transform: translateX(0);
+                        transform: translateY(0);
                     }
                     .main__icon{
                         transform: translateX(0);
@@ -66,6 +66,7 @@
         justify-content: center;
         color: white;
         background-color: $pr;
+        overflow: hidden;
        
     }
     &__icon{
@@ -78,9 +79,10 @@
         align-items: center;
         justify-content: center;
         margin-top: 18px;
-        transform: translateX(500%);
+        transform: translateY(500%);
         transition: 1s ease transform;
-        transition-delay: 0.6s;
+        transition-delay: 0.4s;
+        overflow: hidden;
         &:hover{
             background-color: #fff;
             color: $pr;
@@ -88,11 +90,11 @@
     }
     &__text {
         text-align: center;
-        padding-bottom: 18px;
+        padding-bottom: 5px;
         border-bottom: 1px solid white;
-        transform: translate(200%);
+        transform: translateX(400%);
         transition: 1s ease transform;
-        transition-delay: 0.3s;
+        transition-delay: 0.6s;
         & p{
             margin: 0;
             line-height: 2.5;
@@ -106,7 +108,7 @@
         }
     }
     &__swiper{
-        transform: translateX(200%);
+        transform: translateY(1000%);
         transition: 1s ease transform;
         text-align: center;
     }
