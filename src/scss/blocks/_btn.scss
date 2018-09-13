@@ -73,5 +73,23 @@
             font-weight: 900;
         }
     }
+    &--show{
+        z-index: 10000;
+        position: fixed;
+        bottom: 0;
+        left: 53.5%;
+        background-color: $pr;
+        color: white;
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 1.5;
+        text-transform: uppercase;
+        padding: 19px 27px;
+        transition: 0.3s linear;
+        &:hover{
+            background-color: #fff;
+            color: $pr;
+        }
+    }
 }
 

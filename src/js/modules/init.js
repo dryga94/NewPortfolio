@@ -12,8 +12,24 @@ document.addEventListener("DOMContentLoaded", function (event){
         console.log('ready');
     }
 
+    // MASONRY
+    var elem = document.querySelector('.blog');
+    var msnry = new Masonry( elem, {
+    itemSelector: '.col'
+});
+  
     // SWIPER INIT
+    if ($('.gallery-blog').length) {
+      var galleryBlog = new Swiper('.gallery-blog', {
+          slidesPerView: 1,
+          autoHeight: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
 
+    }
     if ($('.gallery-top').length) {
       var galleryTop = new Swiper('.gallery-top', {
           slidesPerView: 1,
@@ -22,12 +38,18 @@ document.addEventListener("DOMContentLoaded", function (event){
             prevEl: '.swiper-button-prev',
           },
         });
-        galleryTop.controller.control = galleryTop;
     }
+      $('.gallery-top').on('click',function(){
+      $(this).parent().parent().parent().parent().masonry('destroy');
+      $('.blog').masonry({
+        itemSelector: '.col',
+      });
+      console.log($(this).parent().parent().parent().parent())
+    });
+
     if ($('.gallery-thumbs').length & $('.gallery-top').length) {
       var galleryTop = new Swiper('.gallery-top', {
         slidesPerView: 1,
-        autoHeight: true,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',

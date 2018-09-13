@@ -1,0 +1,16 @@
+mixin blogstandart(img,comNum,date)
+    .col.col--5
+        .blog__standart
+            .blog__images
+                img.blog__example(src="./img/main/" + img + '.jpg')
+            .blog__info
+                .blog__tittle Standart post example
+                .blog__text A man who works with his hands is a laborer; a man who works with his hand s and his brain is a craftsman; but a man who works with his 
+                .blog__underline
+                .blog__infoblock
+                    .blog__comments
+                        i.fas.fa-comment
+                        p= comNum + ' Comments'
+                    .blog__date
+                        i.far.fa-calendar-alt
+                        p= date

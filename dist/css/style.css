@@ -307,7 +307,9 @@ template {
   width: 100%;
   max-height: 100vh; }
   .container--small {
-    padding: 15px; }
+    padding: 15px !important; }
+  .container--hidden {
+    overflow: hidden; }
 
 .row {
   display: -webkit-box;
@@ -422,6 +424,24 @@ template {
       color: #1ab5b3;
       background-color: white;
       font-weight: 900; }
+  .btn--show {
+    z-index: 10000;
+    position: fixed;
+    bottom: 0;
+    left: 53.5%;
+    background-color: #1ab5b3;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    padding: 19px 27px;
+    -webkit-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    transition: 0.3s linear; }
+    .btn--show:hover {
+      background-color: #fff;
+      color: #1ab5b3; }
 
 .social {
   display: -webkit-box;
@@ -1330,10 +1350,12 @@ progress {
   display: flex;
   height: 100%;
   width: 100%; }
+  .blog--hidden {
+    overflow: hidden; }
   .blog__singleimg {
     width: 100%;
     height: auto; }
-  .blog__gallery {
+  .blog__gallery, .blog__standart {
     background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1348,7 +1370,7 @@ progress {
     width: 100%;
     height: auto; }
   .blog__info {
-    padding: 19px 22px; }
+    padding: 13px 22px; }
   .blog__tittle {
     color: black;
     font-size: 18px;
@@ -1425,6 +1447,38 @@ progress {
     font-style: italic;
     line-height: 1.4;
     text-decoration: underline; }
+
+.quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #242b2e;
+  padding: 33px 35px 25px 35px; }
+  .quote__text {
+    color: white;
+    font-family: 'Georgia';
+    font-size: 21px;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center; }
+  .quote__symbol {
+    color: #1ab5b3;
+    font-family: 'Georgia';
+    font-size: 63px;
+    font-style: italic;
+    line-height: 0;
+    text-align: center;
+    margin-top: 52px;
+    margin-bottom: 10px; }
+  .quote__author {
+    color: #1ab5b3;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center; }
 
 * {
   -webkit-box-sizing: border-box;

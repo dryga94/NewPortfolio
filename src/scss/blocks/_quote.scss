@@ -1,0 +1,30 @@
+.quote{
+    display: flex;
+    flex-direction: column;
+    background-color: #242b2e;
+    padding: 33px 35px 25px 35px;
+    &__text{
+        color: white;
+        font-family: 'Georgia';
+        font-size: 21px;
+        font-style: italic;
+        line-height: 1.2;
+        text-align: center;
+    }
+    &__symbol{
+        color: $pr;
+        font-family: 'Georgia';
+        font-size: 63px;
+        font-style: italic;
+        line-height: 0;
+        text-align: center;
+        margin-top: 52px;
+        margin-bottom: 10px;
+    }
+    &__author{
+        color: #1ab5b3;
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+    }
+}

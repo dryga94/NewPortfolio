@@ -2,11 +2,14 @@
     display: flex;
     height: 100%;
     width: 100%;
+    &--hidden{
+        overflow: hidden;
+    }
    &__singleimg{
        width: 100%;
        height: auto;
    } 
-   &__gallery{
+   &__gallery, &__standart{
        background-color: white;
        display: flex;
        flex-direction: column;
@@ -19,7 +22,7 @@
        height: auto;
    }
    &__info{
-       padding: 19px 22px;
+       padding: 13px 22px;
    }
    &__tittle{
     color: black;
