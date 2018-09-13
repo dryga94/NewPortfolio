@@ -1,5 +1,3 @@
-
-// $('.main__holder').parent().toggleClass('is-hidden');
 $('.filter__list').on('click', '.filter__radio', function(){
     $('.main__holder').parent().removeClass('is-hidden').removeClass('col--3').removeClass('col--4').toggleClass('col--4');
     var currentId = $(this).attr('id');
@@ -17,7 +15,4 @@ $('.filter__list').on('click', '.filter__radio', function(){
         }
         while(i <= arr.length)
     } 
-    // else {
-    //     $('.main__holder').parent().removeClass('is-hidden').toggleClass('col-4');
-    // }
 });
