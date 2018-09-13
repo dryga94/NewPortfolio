@@ -1,6 +1,6 @@
-mixin work(imgNum, color)
+mixin work(imgNum, workName)
     .col.col--4 
-        .main__holder(class= color)
+        .main__holder(id=workName)
             a(class='main__link' href="work.html")
                 img(class='main__img' src="./img/main/" + imgNum + '.jpg' alt='')
                 .main__appear

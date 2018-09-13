@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event){
   DEBUG = true
+
   // SCROLLBAR INIT
 
 
@@ -15,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function (event){
     // MASONRY
     var elem = document.querySelector('.blog');
     var msnry = new Masonry( elem, {
-    itemSelector: '.col'
-});
+		itemSelector: '.col'
+	});
   
     // SWIPER INIT
     if ($('.gallery-blog').length) {
@@ -27,8 +28,18 @@ document.addEventListener("DOMContentLoaded", function (event){
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           },
+          on: {
+            slideChangeTransitionEnd: function(){
+				msnry.layout();
+            },
+			init: function () {
+				msnry.destroy();
+				msnry = new Masonry( elem, {
+				itemSelector: '.col'
+				});
+			}
+          }
         });
-
     }
     if ($('.gallery-top').length) {
       var galleryTop = new Swiper('.gallery-top', {
@@ -39,13 +50,6 @@ document.addEventListener("DOMContentLoaded", function (event){
           },
         });
     }
-      $('.gallery-top').on('click',function(){
-      $(this).parent().parent().parent().parent().masonry('destroy');
-      $('.blog').masonry({
-        itemSelector: '.col',
-      });
-      console.log($(this).parent().parent().parent().parent())
-    });
 
     if ($('.gallery-thumbs').length & $('.gallery-top').length) {
       var galleryTop = new Swiper('.gallery-top', {
@@ -64,12 +68,8 @@ document.addEventListener("DOMContentLoaded", function (event){
       });
       galleryThumbs.controller.control = galleryTop;
       galleryTop.controller.control = galleryThumbs;
-    }
-
-
-      
-      
-
+	}
+	
       // wow = new WOW(
       //   {
       //   boxClass:     'wow',      // default
@@ -81,7 +81,4 @@ document.addEventListener("DOMContentLoaded", function (event){
       // )
       // wow.init();
       // console.log('readywow');
-
-
-      
 });

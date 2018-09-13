@@ -64,4 +64,22 @@
         white-space: nowrap;
        }
    }
+   &__post{
+        background-color: #242b2e;
+        border-left: 15px solid $pr;
+        padding: 22px 18px 20px 26px;
+        
+        &-tittle{
+            color: white;
+            font-size: 21px;
+            line-height: 1.2;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        &-text{
+            color: #9c9c9c;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+   }
 }

@@ -1416,6 +1416,20 @@ progress {
       color: #a3a3a3;
       padding-top: 0;
       white-space: nowrap; }
+  .blog__post {
+    background-color: #242b2e;
+    border-left: 15px solid #1ab5b3;
+    padding: 22px 18px 20px 26px; }
+    .blog__post-tittle {
+      color: white;
+      font-size: 21px;
+      line-height: 1.2;
+      text-align: left;
+      margin-bottom: 5px; }
+    .blog__post-text {
+      color: #9c9c9c;
+      font-size: 14px;
+      line-height: 1.8; }
 
 .advertise {
   width: 100%;
@@ -1528,3 +1542,6 @@ h4 {
   line-height: 1.25;
   font-size: 24px;
   font-weight: 300; }
+
+.is-hidden {
+  display: none; }
