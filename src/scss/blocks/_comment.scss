@@ -1,0 +1,61 @@
+.comment{
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+    &__equlizer{
+        display: flex;
+        margin-right: 21px;
+        position: relative;
+        height: 80px;
+        width: 80px;
+    }
+    &__vertical{
+        position: absolute;
+        width: 1px;
+        height: 40px;
+        top: 0;
+        left: 50%;
+        background-color: $sec;
+    }
+    &__horizontal{
+        position: absolute;
+        width: 40px;
+        height: 1px;
+        top: 50%;
+        left: 50%;
+        background-color: $sec;
+    }
+    &__img{
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        object-position: center;
+        margin-right: 20px;
+    }
+    &__info{
+        display: flex;
+        margin-bottom: 8px;
+        * + * {
+            padding-left: 3px;
+        }
+    }
+    &__author{
+        color: #3c3c3c;
+        font-size: 14px;
+        line-height: 1;
+        border-bottom: 1px solid $sec;
+        padding-bottom: 8px;
+    }
+    &__date{
+        color: #d1d1d1;
+        font-size: 14px;
+        line-height: 1;
+        border-bottom: 1px solid $sec;
+        padding-bottom: 8px;
+    }
+    &__text{
+        color: #a3a3a3;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}

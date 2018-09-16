@@ -1,0 +1,11 @@
+mixin comment(imgNum,name,time,text,hiden)
+    .comment
+        .comment__equlizer(class= hiden)
+            .comment__vertical
+            .comment__horizontal
+        img.comment__img(src="./img/main/" + imgNum + '.jpg')
+        .comment__wrapper
+            .comment__info
+                .comment__author= name 
+                .comment__date= '/ ' + time
+            .comment__text= text

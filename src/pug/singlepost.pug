@@ -1,0 +1,16 @@
+include ./_header.pug
+title Home
+body
+    .global-wrapper
+        .nav.nav--shadow
+            include ./blocks/_logo.pug
+            ul.nav__list
+                each val in [['active','index','home'],['none','work','work'],['none','about','about'],['none','blog','blog'],['none','contact','contact']]
+                    +navigation(val[0],val[1],val[2])
+            include ./blocks/_social.pug
+            .nav__copyright  © 2014 Kappe, All Rights Reserved       
+        include ./blocks/_info.pug
+        .container
+            .work.scrollbar-inner
+                include ./blocks/_singlepost.pug
+include ./_footer.pug

@@ -1,0 +1,9 @@
+.archive{
+    display: flex;
+    color: #848484;
+    font-size: 14px;
+    line-height: 2;
+    & * + *{  
+        margin-left: 3px;  
+    }
+}

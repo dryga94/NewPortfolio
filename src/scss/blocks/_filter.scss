@@ -7,7 +7,11 @@
         font-size: 19px;
         font-weight: 100;
         line-height: 1.7;
-        
+        transition: filter 0.3s linear;
+        &:hover{
+            cursor: pointer;
+            filter: brightness(1.5);
+        }
         & i{
             font-size: 18px;
             margin-left: 13px;
@@ -15,11 +19,11 @@
         }
     }
     &__nav{
-        display: flex;
+        display: none;
         flex-direction: column;
         margin-top: 13px;
         margin-bottom: 0;
-       
+        
     }
     &__item{
         text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);

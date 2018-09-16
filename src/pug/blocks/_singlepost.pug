@@ -1,0 +1,25 @@
+.col.col--2
+    .col.col--1
+        include ./_swiper.pug
+        .singlepost__text
+            h2 Heavy Sand - Creative photography
+            p Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+            p Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+        .singlepost__comments
+            h2 5 Comments
+            +comment('1','ShaneFreer ','58 minuites ago','great post brainartworks','is-hidden')
+            +comment('1','ShaneFreer ','58 minuites ago','great post brainartworks','none')   
+.col.col--2
+    .col.col--1
+        h2 Post info
+        ul.singlepost__info
+            each val in [['premiumplayers','fas','fa-user'],['138 likes','fas','fa-heart'],['25 December, 2013','far','fa-calendar'],['4 Comments','fas','fa-comments']]
+                +projectinfo(val[0], val[1], val[2])
+        h2 Tags
+        .singlepost__tags
+            each val in ['web design','photography','development','php','ecommerce','graphic']
+                +tags(val)
+        h2 Archives
+        .singlepost__archive
+            each val in [['December','2013','22'],['March','2017','12'],['November','2014','3'],['August','2016','7'],['April','2018','33']]
+                +archive(val[0], val[1], val[2])
