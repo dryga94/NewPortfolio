@@ -13,31 +13,40 @@
 <title>Contact</title>
 <body>
   <div class="global-wrapper">
-    <div class="nav nav--shadow"><a class="logoholder" href="http://">
-        <div class="logo__circle">  <img class="logo logo--1" src="./img/circle.png" alt=""/><img class="logo logo--2" src="./img/circle.png" alt=""/><img class="logo logo--3" src="./img/circle.png" alt=""/></div><img class="logo logo--main" src="./img/logo.png" alt=""/><img class="logo logo--sub" src="./img/sublogo.png" alt=""/></a>
-      <ul class="nav__list">
-        <li class="nav__item nav__item--none"><a class="nav__link" href="index.html">home</a></li>
-        <li class="nav__item nav__item--none"><a class="nav__link" href="work.html">work</a></li>
-        <li class="nav__item nav__item--none"><a class="nav__link" href="about.html">about</a></li>
-        <li class="nav__item nav__item--none"><a class="nav__link" href="blog.html">blog</a></li>
-        <li class="nav__item nav__item--active"><a class="nav__link" href="contact.html">contact</a></li>
-      </ul>
-      <ul class="social">
-        <li class="social__item"><a class="btn btn--social btn--vk" href="javascript:void(0)"><i class="fab fa-vk"></i></a>
-        </li>
-        <li class="social__item"><a class="btn btn--social btn--google" href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a>
-        </li>
-        <li class="social__item"><a class="btn btn--social btn--twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li class="social__item"><a class="btn btn--social btn--print" href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a>
-        </li>
-        <li class="social__item"><a class="btn btn--social btn--dribble" href="javascript:void(0)"><i class="fab fa-dribbble"></i></a>
-        </li>
-        <li class="social__item"><a class="btn btn--social btn--behance" href="javascript:void(0)"><i class="fab fa-behance"></i></a>
-        </li>
-        <li class="social__item"><a class="btn btn--social btn--facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-        </li>
-      </ul>
+    <div class="nav nav--shadow">
+      <div class="nav__button">
+        <div class="nav__hamburger">
+          <div class="nav__button-top"></div>
+          <div class="nav__button-mid"></div>
+          <div class="nav__button-bot"></div>
+        </div>
+      </div>
+      <div class="nav__wrapper"><a class="logoholder" href="http://">
+          <div class="logo__circle">  <img class="logo logo--1" src="./img/circle.png" alt=""/><img class="logo logo--2" src="./img/circle.png" alt=""/><img class="logo logo--3" src="./img/circle.png" alt=""/></div><img class="logo logo--main" src="./img/logo.png" alt=""/><img class="logo logo--sub" src="./img/sublogo.png" alt=""/></a>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--none"><a class="nav__link" href="index.html">home</a></li>
+          <li class="nav__item nav__item--none"><a class="nav__link" href="work.html">work</a></li>
+          <li class="nav__item nav__item--none"><a class="nav__link" href="about.html">about</a></li>
+          <li class="nav__item nav__item--none"><a class="nav__link" href="blog.html">blog</a></li>
+          <li class="nav__item nav__item--active"><a class="nav__link" href="contact.html">contact</a></li>
+        </ul>
+        <ul class="social">
+          <li class="social__item"><a class="btn btn--social btn--vk" href="javascript:void(0)"><i class="fab fa-vk"></i></a>
+          </li>
+          <li class="social__item"><a class="btn btn--social btn--google" href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+          <li class="social__item"><a class="btn btn--social btn--twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="social__item"><a class="btn btn--social btn--print" href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a>
+          </li>
+          <li class="social__item"><a class="btn btn--social btn--dribble" href="javascript:void(0)"><i class="fab fa-dribbble"></i></a>
+          </li>
+          <li class="social__item"><a class="btn btn--social btn--behance" href="javascript:void(0)"><i class="fab fa-behance"></i></a>
+          </li>
+          <li class="social__item"><a class="btn btn--social btn--facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+          </li>
+        </ul>
+      </div>
       <div class="nav__copyright"> © 2014 Kappe, All Rights Reserved  </div>
     </div>
     <div class="info"><a class="btn btn--info js-dropdown" href="javascript:void(0)"><i class="fas fa-info-circle"></i></a>
@@ -49,7 +58,7 @@
     </div>
     <div class="map">
       <div class="map__holder"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2723.4049275225348!2d31.99221161560794!3d46.95373357914678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1536238005434" width="100%" height='100%' frameborder="0" style="display:block"  allowfullscreen></iframe>    </div>
-      <div class="form"> 
+      <div class="form form--contact"> 
         <form class="form__contact" action="get">
           <div class="form__text">
             <h2>Get in touch with us</h2>
@@ -58,7 +67,7 @@
             <h2>Send us a message</h2>
           </div>
           <div class="row row--nogutters">
-            <div class="col col--2">
+            <div class="col col--2 col-sm--1">
               <div class="form__wrapper">
                 <input class="form__input form__input--noborder" type="text" name="Name" id="name" placeholder="Name"/>
                 <label class="form__label" for="name"><i class="fas fa-user"></i></label>
@@ -72,9 +81,9 @@
                 <label class="form__label" for="website"><i class="fas fa-link"></i></label>
               </div>
             </div>
-            <div class="col col--2">
+            <div class="col col--2 col-sm--1">
               <div class="form__wrapper form__wrapper--right">
-                <textarea class="form__input" name="" placeholder="Message" wrap="soft" rows="5"></textarea>
+                <textarea class="form__input form__input--textarea" name="" placeholder="Message" wrap="soft" rows="5"></textarea>
               </div>
               <div class="form__wrapper form__wrapper--right"><a class="btn btn--submit" href="javascript:void(0)">Send now!</a></div>
             </div>

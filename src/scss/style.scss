@@ -19,6 +19,9 @@ li{
 .global-wrapper{
     display: flex;
     flex: 1;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
 }
 .dark{
     background-color: #acacac;
@@ -33,6 +36,9 @@ p {
     font-weight: 300;
     line-height: 1.6;
     padding-top: 10px;
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
 }
 // p{
 //     margin: 0;
@@ -45,6 +51,9 @@ h2{
     line-height: 1.1;
     margin: 0;
     color: black;
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
 }
 h4{
     margin: 0;
@@ -53,5 +62,15 @@ h4{
     font-weight: 300;
 }
 .is-hidden{
-    display: none;
+    // display: none;
+    opacity: .5;
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.ready{
+    transform: scale(1);
+}
+.scale-out{
+    transform: scale(0);
 }

@@ -3,16 +3,21 @@ title About
 body
     .global-wrapper
         .nav.nav--shadow
-            include ./blocks/_logo.pug
-            ul.nav__list
-                each val in [['none','index','home'],['none','work','work'],['active','about','about'],['none','blog','blog'],['none','contact','contact']]
-                    +navigation(val[0],val[1],val[2])
-            include ./blocks/_social.pug
-            .nav__copyright  © 2014 Kappe, All Rights Reserved  
+            .nav__button
+                .nav__hamburger
+                    .nav__button-top
+                    .nav__button-mid
+                    .nav__button-bot
+            .nav__wrapper
+                include ./blocks/_logo.pug
+                ul.nav__list
+                    each val in [['none','index','home'],['none','work','work'],['active','about','about'],['none','blog','blog'],['none','contact','contact']]
+                        +navigation(val[0],val[1],val[2])
+                include ./blocks/_social.pug
+                .nav__copyright  © 2014 Kappe, All Rights Reserved  
         include ./blocks/_info.pug
         .container
             .about.scrollbar-inner
                 include ./blocks/_about.pug
-                .about__vertical
                 include ./blocks/_skills.pug
 include ./_footer.pug

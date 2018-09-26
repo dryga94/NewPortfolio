@@ -5,6 +5,12 @@
         content: '';
         display: block;
         padding-top: 78%;
+        @media screen and (max-width: 990px) {
+            padding-top: 60%;
+        }
+        @media screen and (max-width: 768px) {
+            padding-top: 78%;
+        }
     }
     &-contwrap{
         position: absolute;

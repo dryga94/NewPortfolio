@@ -1,10 +1,15 @@
 .social{
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     margin-top: 0;
+    padding: 0;
+    @media screen and (max-height: 768px) {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
     &__item{
         list-style: none;
+        margin-bottom: 10px;
         &:hover {
             animation-name: shake;
             animation-duration: 0.2s;

@@ -9,6 +9,10 @@
     &--hidden{
         overflow: hidden;
     }
+    @media screen and (max-width: 990px) {
+        max-height: 100%;
+        padding: 0;
+    }
 }
 .row{
     display: flex;
@@ -55,4 +59,54 @@
         padding: 15px;
         width: 100%;
     }
+    &-lg{
+        @media screen and (max-width: 1200px){
+            &--4{
+                width: 25%;
+            }
+        }
+    }
+    &-md{
+        @media screen and (max-width: 990px) {
+            &--3 {
+                width: calc(100%/3);
+                padding: 15px;
+            }
+            &--1{
+                width: 100%;
+            }
+            &--5{
+                width: 20%;
+            }
+            &--3{
+                width:calc(100%/3);
+            }
+        }
+    }
+    &-sm{
+        @media screen and (max-width: 768px) {
+            &--2 {
+                width: 50%;
+                padding: 15px;
+            }
+            &--4{
+                width: 25%;
+            }
+            &--1{
+                width: 100%;
+            }
+        }
+    }
+    &-exm{
+        @media screen and (max-width: 576px) {
+            &--1 {
+                width: 100%;
+                padding: 15px;
+            }
+            &--3{
+                width: calc(100%/3)
+            }
+        }
+    }
+    
 }

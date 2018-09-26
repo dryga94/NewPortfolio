@@ -1,15 +1,67 @@
 .nav {
-    width: 300px;
+    display: flex;
+    min-width: 300px;
     height: 100vh;
     background-color: #242b2e;
     padding: 0 25px;
-    position: relative;
-    display: flex;
     flex-direction: column;
     flex: 1;
+    @media screen and (max-height: 768px) {
+        min-width: 200px;
+        padding: 0 20px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
     &--shadow{
         z-index: 3;
         box-shadow: 17px 0 50px rgba(0, 0, 0, 0.6)
+    }
+    &__wrapper{
+        display: block;
+        background-color: #242b2e;
+        margin: 0 -20px;
+        padding: 0 20px;
+        @media screen and (max-width: 768px) {
+            margin-top: 10px;
+            display: none;
+
+        }
+    }
+    &__hamburger{
+        display: flex;
+        flex-direction: column;
+    }
+    &__button{
+        @media screen and (max-width: 768px) {
+            display: flex;
+            justify-content: flex-end;
+            &-top{
+                background-color: white;
+                width: 30px;
+                height: 5px;
+                margin-bottom: 5px;
+            }
+            &-mid{
+                background-color: white;
+                width: 30px;
+                height: 5px;
+                margin-bottom: 5px;
+            }
+            &-bot{
+                background-color: white;
+                width: 30px;
+                height: 5px;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        
     }
     &__list{
         display: flex;
@@ -19,6 +71,12 @@
         margin-left: -25px;
         margin-right: -25px;
         padding: 0;
+        
+        @media screen and (max-height: 768px) {
+            margin-bottom: 10px;
+            margin-left: -20px;
+            margin-right: -20px;
+        }
         &:hover {
             .nav__item--active {
                 background-color: #2f373b;
@@ -42,7 +100,10 @@
         display: block;
         padding: 15px 25px;
         box-sizing: border-box;
-        
+        @media screen and (max-height: 768px) {
+            font-size: 14px;
+            padding: 8px 20px;
+        }
     }
     &__item{
         box-sizing: border-box;
@@ -65,6 +126,9 @@
         font-size: 12px;
         font-weight: 100;
         line-height: 2;
+        @media screen and (max-height: 768px) {
+            font-size: 9px;
+        }
     }
 }
 

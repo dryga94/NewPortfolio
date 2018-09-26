@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function (event){
-  DEBUG = true
+  let DEBUG = true;
 
   // SCROLLBAR INIT
 
-
+  let holder = new HolderTransition();
     if ($('.scrollbar-inner').length) {
         $('.scrollbar-inner').scrollbar();
         console.log('ready');

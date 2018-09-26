@@ -6,6 +6,10 @@
     display: flex;
     justify-content: center;
     position: relative;
+    @media screen and (max-height: 768px) {
+        padding-bottom: 30px;
+        margin: 0 -20px;
+    }
 }
 .logo {
     box-sizing: border-box;
@@ -13,6 +17,9 @@
         position: absolute;
         top: 55%;
         left: 51%;
+        @media screen and (max-height: 768px) {
+            top: 70%;
+        }
     }
     &__link{
         display: block;
@@ -34,6 +41,9 @@
     }
     &__circle{
         position: relative;  
-        margin-right: 35px;     
+        margin-right: 35px; 
+        // @media screen and (max-height: 768px) {
+        //     margin-right: 20px;
+        // }    
     }
 }

@@ -1,29 +1,59 @@
 .comment{
-    display: flex;
-    flex: 1;
-    margin-top: 20px;
-    &__equlizer{
+    position: relative;
+    
+    & > & {
+        padding-left: 105px;
+        @media screen and (max-width: 990px) {
+            padding-left: 75px;
+        }
+        @media screen and (max-width: 768px) {
+            padding-left: 55px;
+        }
+        &:before{
+            position: absolute;
+            content: '';
+            display: block;
+            width: 1px;
+            height: 40px;
+            top: 0;
+            left: 40px;
+            background-color: $sec;
+            
+            @media screen and (max-width: 990px) {
+                left: 30px;
+                height: 30px;
+            }
+            @media screen and (max-width: 768px) {
+                left: 20px;
+                height: 20px;
+                
+            }
+        }
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 40px;
+            height: 1px;
+            top: 41px;
+            left: 40px;
+            background-color: $sec;
+            @media screen and (max-width: 990px) {
+                left: 30px;
+                width: 30px;
+                top: 30px;
+            }
+            @media screen and (max-width: 768px) {
+                left: 20px;
+                top: 20px;
+                width: 20px;
+            }
+        }
+    }
+    &__wrapper{
         display: flex;
-        margin-right: 21px;
-        position: relative;
-        height: 80px;
-        width: 80px;
-    }
-    &__vertical{
-        position: absolute;
-        width: 1px;
-        height: 40px;
-        top: 0;
-        left: 50%;
-        background-color: $sec;
-    }
-    &__horizontal{
-        position: absolute;
-        width: 40px;
-        height: 1px;
-        top: 50%;
-        left: 50%;
-        background-color: $sec;
+        flex: 1;
+        margin-top: 20px;
     }
     &__img{
         width: 80px;
@@ -31,6 +61,14 @@
         object-fit: cover;
         object-position: center;
         margin-right: 20px;
+        @media screen and (max-width: 990px) {
+            width: 60px;
+            height: 60px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 40px;
+            height: 40px;
+        }
     }
     &__info{
         display: flex;
@@ -45,6 +83,12 @@
         line-height: 1;
         border-bottom: 1px solid $sec;
         padding-bottom: 8px;
+        @media screen and (max-width: 990px) {
+            font-size: 12px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 10px;
+        }
     }
     &__date{
         color: #d1d1d1;
@@ -52,10 +96,24 @@
         line-height: 1;
         border-bottom: 1px solid $sec;
         padding-bottom: 8px;
+        @media screen and (max-width: 990px) {
+            font-size: 12px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 10px;
+        }
     }
     &__text{
         color: #a3a3a3;
         font-size: 18px;
         line-height: 26px;
+        @media screen and (max-width: 990px) {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
 }

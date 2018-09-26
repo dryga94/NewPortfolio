@@ -13,61 +13,70 @@
 <title>Home</title>
 <body>
   <div class="global-wrapper">
-    <div class="nav nav--shadow"><a class="logoholder" href="http://">
-        <div class="logo__circle">  <img class="logo logo--1" src="./img/circle.png" alt=""/><img class="logo logo--2" src="./img/circle.png" alt=""/><img class="logo logo--3" src="./img/circle.png" alt=""/></div><img class="logo logo--main" src="./img/logo.png" alt=""/><img class="logo logo--sub" src="./img/sublogo.png" alt=""/></a>
-      <ul class="nav__list">
-        <li class="nav__item nav__item--active"><a class="nav__link" href="index.html">home</a></li>
-        <li class="nav__item nav__item--none"><a class="nav__link" href="work.html">work</a></li>
-        <li class="nav__item nav__item--none"><a class="nav__link" href="about.html">about</a></li>
-        <li class="nav__item nav__item--none"><a class="nav__link" href="blog.html">blog</a></li>
-        <li class="nav__item nav__item--none"><a class="nav__link" href="contact.html">contact</a></li>
-      </ul>
-      <div class="filter"> 
-        <div class="filter__header js-dropdown">Filter<i class="fas fa-th-large"></i></div>
-        <ul class="filter__nav js-dropdown__body">
-          <li class="filter__list">
-            <input class="filter__radio" type="radio" name="filter" id="all" checked="checked"/>
-            <label class="filter__item" for="all">All works</label>
+    <div class="nav nav--shadow">
+      <div class="nav__button">
+        <div class="nav__hamburger">
+          <div class="nav__button-top"></div>
+          <div class="nav__button-mid"></div>
+          <div class="nav__button-bot"></div>
+        </div>
+      </div>
+      <div class="nav__wrapper"><a class="logoholder" href="http://">
+          <div class="logo__circle">  <img class="logo logo--1" src="./img/circle.png" alt=""/><img class="logo logo--2" src="./img/circle.png" alt=""/><img class="logo logo--3" src="./img/circle.png" alt=""/></div><img class="logo logo--main" src="./img/logo.png" alt=""/><img class="logo logo--sub" src="./img/sublogo.png" alt=""/></a>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active"><a class="nav__link" href="index.html">home</a></li>
+          <li class="nav__item nav__item--none"><a class="nav__link" href="work.html">work</a></li>
+          <li class="nav__item nav__item--none"><a class="nav__link" href="about.html">about</a></li>
+          <li class="nav__item nav__item--none"><a class="nav__link" href="blog.html">blog</a></li>
+          <li class="nav__item nav__item--none"><a class="nav__link" href="contact.html">contact</a></li>
+        </ul>
+        <div class="filter"> 
+          <div class="filter__header js-dropdown">Filter<i class="fas fa-th-large"></i></div>
+          <ul class="filter__nav js-dropdown__body">
+            <li class="filter__list">
+              <input class="filter__radio" type="radio" name="filter" id="all" checked="checked"/>
+              <label class="filter__item" for="all">All works</label>
+            </li>
+            <li class="filter__list">
+              <input class="filter__radio" type="radio" name="filter" id="design"/>
+              <label class="filter__item" for="design">web design</label>
+            </li>
+            <li class="filter__list">
+              <input class="filter__radio" type="radio" name="filter" id="illustration"/>
+              <label class="filter__item" for="illustration">illustration</label>
+            </li>
+            <li class="filter__list">
+              <input class="filter__radio" type="radio" name="filter" id="photo"/>
+              <label class="filter__item" for="photo">photography</label>
+            </li>
+            <li class="filter__list">
+              <input class="filter__radio" type="radio" name="filter" id="wallpaper"/>
+              <label class="filter__item" for="wallpaper">wallpapers</label>
+            </li>
+            <li class="filter__list">
+              <input class="filter__radio" type="radio" name="filter" id="brochure"/>
+              <label class="filter__item" for="brochure">brochures</label>
+            </li>
+          </ul>
+        </div>
+        <ul class="social">
+          <li class="social__item"><a class="btn btn--social btn--vk" href="javascript:void(0)"><i class="fab fa-vk"></i></a>
           </li>
-          <li class="filter__list">
-            <input class="filter__radio" type="radio" name="filter" id="design"/>
-            <label class="filter__item" for="design">web design</label>
+          <li class="social__item"><a class="btn btn--social btn--google" href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a>
           </li>
-          <li class="filter__list">
-            <input class="filter__radio" type="radio" name="filter" id="illustration"/>
-            <label class="filter__item" for="illustration">illustration</label>
+          <li class="social__item"><a class="btn btn--social btn--twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
           </li>
-          <li class="filter__list">
-            <input class="filter__radio" type="radio" name="filter" id="photo"/>
-            <label class="filter__item" for="photo">photography</label>
+          <li class="social__item"><a class="btn btn--social btn--print" href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a>
           </li>
-          <li class="filter__list">
-            <input class="filter__radio" type="radio" name="filter" id="wallpaper"/>
-            <label class="filter__item" for="wallpaper">wallpapers</label>
+          <li class="social__item"><a class="btn btn--social btn--dribble" href="javascript:void(0)"><i class="fab fa-dribbble"></i></a>
           </li>
-          <li class="filter__list">
-            <input class="filter__radio" type="radio" name="filter" id="brochure"/>
-            <label class="filter__item" for="brochure">brochures</label>
+          <li class="social__item"><a class="btn btn--social btn--behance" href="javascript:void(0)"><i class="fab fa-behance"></i></a>
+          </li>
+          <li class="social__item"><a class="btn btn--social btn--facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
           </li>
         </ul>
+        <div class="nav__copyright"> © 2014 Kappe, All Rights Reserved       </div>
       </div>
-      <ul class="social">
-        <li class="social__item"><a class="btn btn--social btn--vk" href="javascript:void(0)"><i class="fab fa-vk"></i></a>
-        </li>
-        <li class="social__item"><a class="btn btn--social btn--google" href="javascript:void(0)"><i class="fab fa-google-plus-g"></i></a>
-        </li>
-        <li class="social__item"><a class="btn btn--social btn--twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li class="social__item"><a class="btn btn--social btn--print" href="javascript:void(0)"><i class="fab fa-pinterest-p"></i></a>
-        </li>
-        <li class="social__item"><a class="btn btn--social btn--dribble" href="javascript:void(0)"><i class="fab fa-dribbble"></i></a>
-        </li>
-        <li class="social__item"><a class="btn btn--social btn--behance" href="javascript:void(0)"><i class="fab fa-behance"></i></a>
-        </li>
-        <li class="social__item"><a class="btn btn--social btn--facebook" href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
-        </li>
-      </ul>
-      <div class="nav__copyright"> © 2014 Kappe, All Rights Reserved       </div>
     </div>
     <div class="info"><a class="btn btn--info js-dropdown" href="javascript:void(0)"><i class="fas fa-info-circle"></i></a>
       <ul class="info__submenu js-dropdown__body"> 
@@ -78,8 +87,8 @@
     </div>
     <div class="main scrollbar-inner">
       <div class="row row--nogutters">
-        <div class="col col--4"> 
-          <div class="main__holder" id="design"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/1.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="design"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/1.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -90,8 +99,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="illustration"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/2.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="illustration"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/2.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -102,8 +111,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="photo"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/3.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="photo"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/3.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -114,8 +123,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="illustration"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/4.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="illustration"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/4.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -126,8 +135,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="wallpaper"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/5.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="wallpaper"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/5.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -138,8 +147,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="design"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/6.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="design"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/6.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -150,8 +159,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="photo"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/7.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="photo"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/7.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -162,8 +171,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="design"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/8.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="design"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/8.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -174,8 +183,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="brochure"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/9.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="brochure"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/9.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -186,8 +195,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="wallpaper"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/10.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="wallpaper"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/10.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -198,8 +207,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="illustration"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/11.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="illustration"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/11.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -210,8 +219,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="brochure"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/12.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="brochure"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/12.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -222,8 +231,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="wallpaper"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/13.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="wallpaper"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/13.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -234,8 +243,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="design"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/14.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="design"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/14.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -246,8 +255,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="illustration"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/15.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="illustration"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/15.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -258,8 +267,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="photo"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/16.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="photo"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/16.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -270,8 +279,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="brochure"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/17.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="brochure"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/17.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -282,8 +291,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="wallpaper"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/18.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="wallpaper"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/18.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -294,8 +303,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="design"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/19.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="design"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/19.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -306,8 +315,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="brochure"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/20.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="brochure"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/20.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -318,8 +327,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="dwallpaper"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/2.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="dwallpaper"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/2.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -330,8 +339,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="illustration"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/3.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="illustration"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/3.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -342,8 +351,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="illustration"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/4.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="illustration"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/4.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -354,8 +363,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="design"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/5.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="design"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/5.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -366,8 +375,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="photo"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/6.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="photo"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/6.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -378,8 +387,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="brochure"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/7.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="brochure"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/7.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -390,8 +399,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="wallpaper"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/8.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="wallpaper"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/8.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>
@@ -402,8 +411,8 @@
                 <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
               </div></a></div>
         </div>
-        <div class="col col--4"> 
-          <div class="main__holder" id="photo"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/9.jpg" alt=""/>
+        <div class="col col--4 col-md--3 col-sm--2 col-exm--1">
+          <div class="main__holder" data-id="photo"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/9.jpg" alt=""/>
               <div class="main__appear">
                 <div class="main__swiper">
                   <h4>Cool App Design</h4>

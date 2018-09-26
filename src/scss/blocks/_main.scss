@@ -1,9 +1,13 @@
 .main{ 
     width: 100%;
     max-height: 100vh;
+    @media screen and (max-width:768px){
+        max-height: 100%;
+    }
     &__holder{
         width: 100%;
         position: relative;
+        transition: 0.5s linear;
         &:before {
             content: '';
             display: block;
@@ -33,11 +37,8 @@
         height: 100%;
         transition: all 0.3s linear ;
         &:hover{
-            .main__img{
-                display: none;
-            }
             .main__appear{
-                display: flex;
+                opacity: 1;
                 &:hover {
                     .main__swiper{
                         transform: translateY(0);
@@ -54,13 +55,14 @@
         }
     }
     &__appear{
-        display: flex;
+        transition: 0.3s linear opacity;
+        opacity: 0;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -81,7 +83,7 @@
         margin-top: 18px;
         transform: translateY(500%);
         transition: 1s ease transform;
-        transition-delay: 0.4s;
+        transition-delay: 0.7s;
         overflow: hidden;
         &:hover{
             background-color: #fff;
@@ -94,7 +96,7 @@
         border-bottom: 1px solid white;
         transform: translateX(400%);
         transition: 1s ease transform;
-        transition-delay: 0.6s;
+        transition-delay: 0.9s;
         & p{
             margin: 0;
             line-height: 2.5;
@@ -111,5 +113,6 @@
         transform: translateY(1000%);
         transition: 1s ease transform;
         text-align: center;
+        transition-delay: 0.3s;
     }
 }

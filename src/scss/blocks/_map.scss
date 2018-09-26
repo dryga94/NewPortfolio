@@ -1,9 +1,12 @@
 .map {
     display: block;
     width: 100%;
-    max-height: 100vh;
-    padding: 0 25px;
-    position: relative;
+    height: 100vh;
+    position: static;
+    top: 0;
+    left: 0;
+    // padding: 0 25px;
+    // position: relative;
     &__holder{
         margin: 0 -25px;
         height: 100%;

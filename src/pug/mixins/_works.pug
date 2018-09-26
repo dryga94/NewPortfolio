@@ -1,6 +1,6 @@
 mixin work(imgNum, workName)
-    .col.col--4 
-        .main__holder(id=workName)
+    .col.col--4.col-md--3.col-sm--2.col-exm--1
+        .main__holder(data-id=workName)
             a(class='main__link' href="work.html")
                 img(class='main__img' src="./img/main/" + imgNum + '.jpg' alt='')
                 .main__appear

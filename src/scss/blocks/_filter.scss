@@ -1,6 +1,9 @@
 .filter{
     text-align: right;
     margin-bottom: 54px;
+    @media screen and (max-height: 768px) {
+        margin-bottom: 35px;
+    }
     &__header{
         text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
         color: $pr;
@@ -8,6 +11,9 @@
         font-weight: 100;
         line-height: 1.7;
         transition: filter 0.3s linear;
+        @media screen and (max-height: 768px) {
+            font-size: 14px;
+        }
         &:hover{
             cursor: pointer;
             filter: brightness(1.5);
@@ -23,7 +29,9 @@
         flex-direction: column;
         margin-top: 13px;
         margin-bottom: 0;
-        
+        @media screen and (max-height: 768px) {
+            margin-top: 5px;
+        }
     }
     &__item{
         text-shadow: 0.5px 0.9px 4px rgba(0, 0, 0, 0.2);
@@ -31,6 +39,9 @@
         font-weight: 300;
         line-height: 1.9;
         color: #6b7072;
+        @media screen and (max-height: 768px) {
+            font-size: 11px;
+        }
         &:hover {
             cursor: pointer;
             color: white;
@@ -48,8 +59,11 @@
         content: '';
         height: 1px;
         background-color: #1e282b;
-        width: 100%;
         margin: 24px -25px;
-
+        width: 300px;
+        @media screen and (max-height: 768px) {
+            margin: 14px -20px;
+            width: 200px;
+        }
     }
 }

@@ -40,6 +40,11 @@
         width: 90px;
         font-size: 28px;
         line-height: 1;
+        @media screen and (max-width: 768px){
+            height: 60px;
+            width: 60px;
+            font-size: 18px;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -48,11 +53,18 @@
             height: 61px;
             border: 1px solid white;
             border-radius: 50%;
+            @media screen and (max-width: 768px){
+                height: 42px;
+                width: 42px;
+            }
         }
         &:hover {
             &:before  {
                 cursor: pointer;
                 animation: pulse 0.3s linear infinite;
+                @media screen and (max-width: 768px){
+                    animation: none;
+                }
             }   
         }
     }
@@ -86,6 +98,9 @@
         text-transform: uppercase;
         padding: 19px 27px;
         transition: 0.3s linear;
+        @media screen and (max-width: 990px) {
+            display: none;
+        }
         &:hover{
             background-color: #fff;
             color: $pr;
