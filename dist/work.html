@@ -7,11 +7,25 @@
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./plugins/jquery.scrollbar-gh-pages/jquery.scrollbar.css"/><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.css" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
 </html>
 <title>Single work</title>
 <body>
+  <div class="loader">
+    <div class="loader__wrapper">
+      <div class="loader__text">KAPPE</div>
+      <div class="loader__animation">
+        <div class="loader__bigcircle"></div>
+        <div class="loader__smallcircle"> </div>
+      </div>
+      <div class="loader__progress">
+        <div class="loader__bar"></div>
+        <div class="loader__fill" id="progress"></div>
+      </div>
+    </div>
+  </div>
   <div class="global-wrapper">
     <div class="nav nav--shadow">
       <div class="nav__button">
@@ -67,31 +81,31 @@
 <img src="./img/main/1.jpg">
 </div>
 <div class="swiper-slide">
-<img src="./img/main/2.jpg">
+<img src="./img/main/13.jpg">
 </div>
 <div class="swiper-slide">
-<img src="./img/main/3.jpg">
+<img src="./img/main/15.jpg">
+</div>
+<div class="swiper-slide">
+<img src="./img/main/19.jpg">
 </div>
 <div class="swiper-slide">
 <img src="./img/main/4.jpg">
 </div>
 <div class="swiper-slide">
-<img src="./img/main/5.jpg">
+<img src="./img/main/9.jpg">
 </div>
 <div class="swiper-slide">
-<img src="./img/main/6.jpg">
+<img src="./img/main/14.jpg">
 </div>
 <div class="swiper-slide">
 <img src="./img/main/7.jpg">
 </div>
 <div class="swiper-slide">
-<img src="./img/main/8.jpg">
+<img src="./img/main/16.jpg">
 </div>
 <div class="swiper-slide">
-<img src="./img/main/9.jpg">
-</div>
-<div class="swiper-slide">
-<img src="./img/main/10.jpg">
+<img src="./img/main/20.jpg">
 </div>
 </div>
 <!-- Add Arrows -->
@@ -105,31 +119,31 @@
 <img src="./img/main/1.jpg">
 </div>
 <div class="swiper-slide">
-<img src="./img/main/2.jpg">
+<img src="./img/main/13.jpg">
 </div>
 <div class="swiper-slide">
-<img src="./img/main/3.jpg">
+<img src="./img/main/15.jpg">
+</div>
+<div class="swiper-slide">
+<img src="./img/main/19.jpg">
 </div>
 <div class="swiper-slide">
 <img src="./img/main/4.jpg">
 </div>
 <div class="swiper-slide">
-<img src="./img/main/5.jpg">
+<img src="./img/main/9.jpg">
 </div>
 <div class="swiper-slide">
-<img src="./img/main/6.jpg">
+<img src="./img/main/14.jpg">
 </div>
 <div class="swiper-slide">
 <img src="./img/main/7.jpg">
 </div>
 <div class="swiper-slide">
-<img src="./img/main/8.jpg">
+<img src="./img/main/16.jpg">
 </div>
 <div class="swiper-slide">
-<img src="./img/main/9.jpg">
-</div>
-<div class="swiper-slide">
-<img src="./img/main/10.jpg">
+<img src="./img/main/20.jpg">
 </div>
 </div>
 </div>
@@ -144,7 +158,7 @@
             <div class="work__related">
               <h2>Related projects</h2>
               <div class="row row--nogutters">
-                <div class="col col--3 col--3-pad">
+                <div class="col col--3 col--3-pad col-sm--1">
                   <div class="main__holder"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/14.jpg" alt=""/>
                       <div class="main__appear">
                         <div class="main__swiper">
@@ -156,7 +170,7 @@
                         <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
                       </div></a></div>
                 </div>
-                <div class="col col--3 col--3-pad">
+                <div class="col col--3 col--3-pad col-sm--1">
                   <div class="main__holder"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/12.jpg" alt=""/>
                       <div class="main__appear">
                         <div class="main__swiper">
@@ -168,7 +182,7 @@
                         <div class="main__icon"><i class="fas fa-arrow-right"></i></div>
                       </div></a></div>
                 </div>
-                <div class="col col--3 col--3-pad">
+                <div class="col col--3 col--3-pad col-sm--1">
                   <div class="main__holder"><a class="main__link" href="work.html"><img class="main__img" src="./img/main/18.jpg" alt=""/>
                       <div class="main__appear">
                         <div class="main__swiper">
@@ -208,34 +222,34 @@
             <div class="work__gallery">
               <div class="row row--extrasmall">
                 <div class="col col--8 col-exm--3 col-md--5 col-sm--4">
-                  <div class="gallery__wrapper"><a class="gallery__link" href="javascript:void(0)"><img class="gallery__img" src="./img/main/1.jpg"/></a></div>
+                  <div class="gallery__wrapper"><a class="gallery__link" data-fancybox="gallery" href="./img/main/1.jpg"><img class="gallery__img" src="./img/main/1.jpg"/></a></div>
                 </div>
                 <div class="col col--8 col-exm--3 col-md--5 col-sm--4">
-                  <div class="gallery__wrapper"><a class="gallery__link" href="javascript:void(0)"><img class="gallery__img" src="./img/main/13.jpg"/></a></div>
+                  <div class="gallery__wrapper"><a class="gallery__link" data-fancybox="gallery" href="./img/main/13.jpg"><img class="gallery__img" src="./img/main/13.jpg"/></a></div>
                 </div>
                 <div class="col col--8 col-exm--3 col-md--5 col-sm--4">
-                  <div class="gallery__wrapper"><a class="gallery__link" href="javascript:void(0)"><img class="gallery__img" src="./img/main/15.jpg"/></a></div>
+                  <div class="gallery__wrapper"><a class="gallery__link" data-fancybox="gallery" href="./img/main/15.jpg"><img class="gallery__img" src="./img/main/15.jpg"/></a></div>
                 </div>
                 <div class="col col--8 col-exm--3 col-md--5 col-sm--4">
-                  <div class="gallery__wrapper"><a class="gallery__link" href="javascript:void(0)"><img class="gallery__img" src="./img/main/19.jpg"/></a></div>
+                  <div class="gallery__wrapper"><a class="gallery__link" data-fancybox="gallery" href="./img/main/19.jpg"><img class="gallery__img" src="./img/main/19.jpg"/></a></div>
                 </div>
                 <div class="col col--8 col-exm--3 col-md--5 col-sm--4">
-                  <div class="gallery__wrapper"><a class="gallery__link" href="javascript:void(0)"><img class="gallery__img" src="./img/main/4.jpg"/></a></div>
+                  <div class="gallery__wrapper"><a class="gallery__link" data-fancybox="gallery" href="./img/main/4.jpg"><img class="gallery__img" src="./img/main/4.jpg"/></a></div>
                 </div>
                 <div class="col col--8 col-exm--3 col-md--5 col-sm--4">
-                  <div class="gallery__wrapper"><a class="gallery__link" href="javascript:void(0)"><img class="gallery__img" src="./img/main/9.jpg"/></a></div>
+                  <div class="gallery__wrapper"><a class="gallery__link" data-fancybox="gallery" href="./img/main/9.jpg"><img class="gallery__img" src="./img/main/9.jpg"/></a></div>
                 </div>
                 <div class="col col--8 col-exm--3 col-md--5 col-sm--4">
-                  <div class="gallery__wrapper"><a class="gallery__link" href="javascript:void(0)"><img class="gallery__img" src="./img/main/14.jpg"/></a></div>
+                  <div class="gallery__wrapper"><a class="gallery__link" data-fancybox="gallery" href="./img/main/14.jpg"><img class="gallery__img" src="./img/main/14.jpg"/></a></div>
                 </div>
                 <div class="col col--8 col-exm--3 col-md--5 col-sm--4">
-                  <div class="gallery__wrapper"><a class="gallery__link" href="javascript:void(0)"><img class="gallery__img" src="./img/main/7.jpg"/></a></div>
+                  <div class="gallery__wrapper"><a class="gallery__link" data-fancybox="gallery" href="./img/main/7.jpg"><img class="gallery__img" src="./img/main/7.jpg"/></a></div>
                 </div>
                 <div class="col col--8 col-exm--3 col-md--5 col-sm--4">
-                  <div class="gallery__wrapper"><a class="gallery__link" href="javascript:void(0)"><img class="gallery__img" src="./img/main/16.jpg"/></a></div>
+                  <div class="gallery__wrapper"><a class="gallery__link" data-fancybox="gallery" href="./img/main/16.jpg"><img class="gallery__img" src="./img/main/16.jpg"/></a></div>
                 </div>
                 <div class="col col--8 col-exm--3 col-md--5 col-sm--4">
-                  <div class="gallery__wrapper"><a class="gallery__link" href="javascript:void(0)"><img class="gallery__img" src="./img/main/20.jpg"/></a></div>
+                  <div class="gallery__wrapper"><a class="gallery__link" data-fancybox="gallery" href="./img/main/20.jpg"><img class="gallery__img" src="./img/main/20.jpg"/></a></div>
                 </div>
               </div>
             </div>
@@ -258,3 +272,4 @@
 <script src="./plugins/jquery.scrollbar-gh-pages/jquery.scrollbar.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
 <script src="./plugins/WOW-master/dist/wow.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.js"></script>

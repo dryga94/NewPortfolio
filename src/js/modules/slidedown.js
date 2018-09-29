@@ -13,6 +13,7 @@ $(document).mouseup(function (close){
     }
 });
 $('.nav__hamburger').on('click', function (){
+    $(this).toggleClass('is-active');
     $(this).parent().parent().find('.nav__wrapper').slideToggle();
 })
 

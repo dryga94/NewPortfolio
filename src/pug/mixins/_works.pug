@@ -1,11 +1,11 @@
-mixin work(imgNum, workName)
+mixin work(imgNum, workName, header)
     .col.col--4.col-md--3.col-sm--2.col-exm--1
         .main__holder(data-id=workName)
             a(class='main__link' href="work.html")
-                img(class='main__img' src="./img/main/" + imgNum + '.jpg' alt='')
+                img(class='main__img' src="./img/" + workName + '/' + imgNum + '.jpg' alt='')
                 .main__appear
                     .main__swiper
-                        h4 Cool App Design
+                        h4!= 'Cool ' + header + '&nbsp;Design'
                     .main__text
                         p development, mobile
                     .main__icon

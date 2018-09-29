@@ -8,8 +8,7 @@
     box-sizing: border-box;
     z-index: 1000;
     @media screen and (max-width: 768px){
-        top: 50%;
-        right: 0;
+        display: none;
     }
     &__submenu{
         position: absolute;

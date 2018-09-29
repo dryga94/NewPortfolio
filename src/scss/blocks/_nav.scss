@@ -14,6 +14,7 @@
         width: 100%;
         height: auto;
         display: block;
+        position: fixed;
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -35,27 +36,38 @@
     &__hamburger{
         display: flex;
         flex-direction: column;
+        position: relative;
+        width: 40px;
     }
     &__button{
         @media screen and (max-width: 768px) {
             display: flex;
             justify-content: flex-end;
+            height: 40px;
             &-top{
+                position: absolute;
+                top: 10px;
                 background-color: white;
-                width: 30px;
-                height: 5px;
+                width: 100%;
+                height: 3px;
                 margin-bottom: 5px;
+                transition: 0.3s ease;
             }
             &-mid{
+                position: absolute;
                 background-color: white;
-                width: 30px;
-                height: 5px;
+                top: 20px;
+                width: 100%;
+                height: 3px;
                 margin-bottom: 5px;
             }
             &-bot{
+                top: 30px;
+                position: absolute;
                 background-color: white;
-                width: 30px;
-                height: 5px;
+                width: 100%;
+                height: 3px;
+                transition: 0.3s ease;
             }
             &:hover{
                 cursor: pointer;
@@ -131,4 +143,16 @@
         }
     }
 }
+.is-active{
+    .nav__button-top{
+        transform: translateY(10px) rotate(135deg);
+    }
+    .nav__button-mid{
+        display: none;
+    }
+    .nav__button-bot{
+        transform: translateY(-10px) rotate(-135deg);
+    }
+}
+
 

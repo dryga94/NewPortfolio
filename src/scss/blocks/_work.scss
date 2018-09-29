@@ -6,6 +6,10 @@
     display: flex;
     flex: 1;
     flex-wrap: wrap;
+    @media screen and (max-width: 990px){
+        padding-top: 50px !important;
+    }
+    
     &__text{
         margin-top: 21px;
         padding-bottom: 21px;

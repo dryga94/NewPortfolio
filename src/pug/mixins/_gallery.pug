@@ -1,5 +1,5 @@
 mixin gallery(pic)
     .col.col--8.col-exm--3.col-md--5.col-sm--4
         .gallery__wrapper
-            a.gallery__link(href="javascript:void(0)")
+            a.gallery__link(data-fancybox="gallery" href="./img/main/" + pic + ".jpg")
                 img.gallery__img(src="./img/main/" + pic + ".jpg")
