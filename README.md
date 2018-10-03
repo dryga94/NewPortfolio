@@ -1,20 +1,12 @@
 # NewPortfolio
+IE POLECHIT
+    max-width 100%;
 
-1) progress - document imagesready + animation progress
+BLOG
+    1) ребилд масонри после прогрузки картинок
+CONTACT 
+    1) peredelatb!
 
-<!-- BLOG -->
-2) blog - position sticky right side
-MASONRY
-
-<!-- WORK -->
-3)slik slider for gallery + melkie kartinki
-
-
-<!-- HOME -->
-
-.row{
-    margin: 0;
-    & [class*="col"]{
-        padding
-    }
-}
+absoluti na flexe top: 50%
+                left: 50%;
+                transform: translate(-50%, -50%);

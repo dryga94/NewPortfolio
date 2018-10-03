@@ -20,7 +20,8 @@ var
           if(loaded_count >= total_count){
           setTimeout(function () {
               var preloader = $('.loader');
-              $(preloader).css('animation','loader 2s linear');
+              // $(preloader).css('animation','loader 2s linear');
+              $(preloader).css('transform','scale(1,0)');
               setTimeout(() => {
                 $(preloader).css('display','none');
               }, 1800);
@@ -32,10 +33,12 @@ var
     else{
       setTimeout(function () {
         var preloader = $('.loader');
-              $(preloader).css('animation','loader 2s linear');
+              // $(preloader).css('animation','loader 2s linear');
+              $(preloader).css('transform','scale(1,0)');
               setTimeout(() => {
                 $(preloader).css('display','none');
               }, 1800);
               
           }, 1000);
+          msnry = new Masonry
     }

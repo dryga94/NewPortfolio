@@ -23,12 +23,7 @@ li{
         display: block;
     }
 }
-.dark{
-    background-color: #acacac;
-}
-.light{
-    background-color: #d7d7d7;
-}
+
 p {
     margin: 0;
     color: #a3a3a3;
@@ -40,11 +35,6 @@ p {
         font-size: 14px;
     }
 }
-// p{
-//     margin: 0;
-//     line-height: 2.5;
-//     font-size: 12px;
-// }
 h2{
     font-size: 24px;
     font-weight: 300;
@@ -62,7 +52,6 @@ h4{
     font-weight: 300;
 }
 .is-hidden{
-    // display: none;
     opacity: .5;
     visibility: hidden;
     position: absolute;

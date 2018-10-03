@@ -13,9 +13,13 @@
         top: 25px;
         left: 25px;
         width: 50%;
-        @media screen and (max-width: 990px){
-            width: 90%;
+        @media screen and (max-width: 768px){
+            top: 60px;
         }
+        @media screen and (max-width: 1200px){
+            width: 80%;
+        }
+        
     }
     &__text{
         padding-bottom: 23px;
@@ -63,6 +67,9 @@
         }
         &:before{
             position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             display: block;
             content: '';
             width: 32px;

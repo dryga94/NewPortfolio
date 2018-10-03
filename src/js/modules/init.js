@@ -1,6 +1,17 @@
 document.addEventListener("DOMContentLoaded", function (event){
   let DEBUG = true;
 
+// GOOGLE MAP INIT
+  if ($('.map__holder').length !=0) {
+    var mapContainer = $('.map__holder')[0];
+    var mapOptions = {
+    center: {lat: 46.953772, lng: 31.994300},
+    zoom: 15,
+    disableDefaultUI: true
+    };
+  let map = new google.maps.Map( mapContainer, mapOptions);
+  }
+  
   // SCROLLBAR INIT
 
   let holder = new HolderTransition();

@@ -43,7 +43,13 @@
    &__infoblock{
        display: flex;
        justify-content: flex-start;
-       align-items: center;
+    //    align-items: center;  
+       @media screen and (max-width: 1900px) {
+        flex-direction: column;
+    }
+        @media screen and (max-width: 768px) {
+            flex-direction: row;
+        }
    }
    &__comments , &__date{
        display: flex;

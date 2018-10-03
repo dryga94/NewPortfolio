@@ -6,6 +6,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    @media screen and (max-width: 1200px) {
+        padding: 37px 10px;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 37px 33px;
+    }
     &__text{
         color: white;
         font-size: 18px;
@@ -20,5 +27,12 @@
         font-style: italic;
         line-height: 1.4;
         text-decoration: underline;
+        text-align: center;
+        @media screen and (max-width: 1440px) {
+            font-size: 9px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 }
