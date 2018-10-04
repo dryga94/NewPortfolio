@@ -50,6 +50,9 @@
             content: '';
             position: absolute;
             background-color: transparent;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 61px;
             height: 61px;
             border: 1px solid white;
