@@ -3,6 +3,15 @@
     justify-content: flex-end;
     margin-top: 0;
     padding: 0;
+    @media screen and (max-width: 990px) {
+        max-width: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 768px) {
+        max-width: 100%;
+        justify-content: flex-end;
+    }
     @media screen and (max-height: 768px) {
         flex-wrap: wrap;
         margin-bottom: 0;
@@ -10,6 +19,14 @@
     &__item{
         list-style: none;
         margin-bottom: 10px;
+        @media screen and (max-width: 990px) {
+            margin-bottom: 3px;
+            margin-top: 3px;
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
         &:hover {
             animation-name: shake;
             animation-duration: 0.2s;

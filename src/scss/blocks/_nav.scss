@@ -10,6 +10,12 @@
         min-width: 200px;
         padding: 0 20px;
     }
+    @media screen and (max-width: 990px) {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: fixed;
+    }
     @media screen and (max-width: 768px) {
         width: 100%;
         height: auto;
@@ -23,15 +29,22 @@
         box-shadow: 17px 0 50px rgba(0, 0, 0, 0.6)
     }
     &__wrapper{
-        display: block;
         background-color: #242b2e;
         margin: 0 -20px;
         padding: 0 20px;
+        @media screen and (max-width: 990px) {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+        }
         @media screen and (max-width: 768px) {
             margin-top: 10px;
             display: none;
-
         }
+        
     }
     &__hamburger{
         display: flex;
@@ -40,6 +53,9 @@
         width: 40px;
     }
     &__button{
+        @media screen and (max-width: 990px) {
+            display: none;
+        }
         @media screen and (max-width: 768px) {
             display: flex;
             justify-content: flex-end;
@@ -89,6 +105,17 @@
             margin-left: -20px;
             margin-right: -20px;
         }
+        @media screen and (max-width: 990px) {
+            flex-direction: row;
+            margin: 0;   
+        }
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            margin-top: 0;
+            margin-bottom: 20px;
+            margin-left: -25px;
+            margin-right: -25px;   
+        }
         &:hover {
             .nav__item--active {
                 background-color: #2f373b;
@@ -116,6 +143,14 @@
             font-size: 14px;
             padding: 8px 20px;
         }
+        @media screen and (max-width: 990px) {
+            font-size: 14px;
+            padding: 18.5px 20px;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+            padding: 8px 20px;
+        }
     }
     &__item{
         box-sizing: border-box;
@@ -131,6 +166,13 @@
             cursor: pointer;
             background-image: linear-gradient(to top, #18a3a1 0%, #31bdbb 100%);
         }
+        @media screen and (max-width: 990px) {
+            background-image: linear-gradient(to left, #2e3539 0%, #333b3f 100%);
+        }
+        @media screen and (max-width: 768px) {
+
+            background-image: linear-gradient(to top, #2e3539 0%, #333b3f 100%);
+        }
     }
     &__copyright{
         text-align: right;
@@ -140,6 +182,12 @@
         line-height: 2;
         @media screen and (max-height: 768px) {
             font-size: 9px;
+        }
+        @media screen and (max-width: 990px) {
+            display: none;
+        }
+        @media screen and (max-width: 768px) {
+            display: block;
         }
     }
 }

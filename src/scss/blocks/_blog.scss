@@ -2,6 +2,9 @@
     display: flex;
     height: 100%;
     width: 100%;
+    @media screen and (max-width: 990px){
+        margin-top: 60px;
+    }
     &--hidden{
         overflow: hidden;
     }
@@ -9,7 +12,7 @@
        width: 100%;
        height: auto;
    } 
-   &__gallery, &__standart{
+   &__gallery, &__standart, &__video{
        background-color: white;
        display: flex;
        flex-direction: column;
@@ -50,6 +53,9 @@
         @media screen and (max-width: 768px) {
             flex-direction: row;
         }
+   }
+   &__videowrapper{
+       max-width: 100%;
    }
    &__comments , &__date{
        display: flex;

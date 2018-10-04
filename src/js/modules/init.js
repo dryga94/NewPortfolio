@@ -11,7 +11,20 @@ document.addEventListener("DOMContentLoaded", function (event){
     };
   let map = new google.maps.Map( mapContainer, mapOptions);
   }
-  
+
+//  VIDEO Player INIT
+if ($('.blog__video').length !=0) {
+   let video = $('#player')
+  const player = new Plyr( video, {
+    controls: [ 'play', 'progress', 'volume', 'captions','mute']
+  });
+    player.volume = 0.5;
+    player.muted = true;
+    player.clickToPlay = true;
+    player.on('doubleclik', function(){
+      this.fullscreen.enter()
+    })
+  }
   // SCROLLBAR INIT
 
   let holder = new HolderTransition();
