@@ -14,7 +14,9 @@ $(document).mouseup(function (close){
 });
 $('.nav__hamburger').on('click', function (){
     $(this).toggleClass('is-active');
-    $(this).parent().parent().find('.nav__wrapper').slideToggle();
-})
-
-    
+    if ($('.nav__wrapper--open').length) {
+        $(this).parent().parent().find('.nav__wrapper').removeClass('nav__wrapper--open');
+    } else {
+        $(this).parent().parent().find('.nav__wrapper').addClass('nav__wrapper--open')
+    };
+});

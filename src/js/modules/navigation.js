@@ -48,27 +48,3 @@ class HolderTransition{
     }
 }
 
-// $('.filter__list').on('click', '.filter__radio', function () {
-//     var currentId = $(this).attr('id');
-//     init()
-//     function init (){
-//         if ($('.main__holder').parent().not('.is-hidden')) {
-//             $('.main__holder').parent().not('.is-hidden').find('.main__holder').toggleClass('scale-out');
-//         }
-//     }
-//     $('.main__holder').on('transitionend', function () {
-//         $('.main__holder').parent().not('.is-hidden').toggleClass('is-hidden');
-//         $('.main__holder').removeClass('scale-out');
-//         filter();
-//     })
-    
-//     function filter() {
-//         if (currentId != 'all') {
-//             console.log(23);
-//             $("[data-id="+currentId+"]").parent().removeClass('is-hidden');
-//         } else {
-//             $('.main__holder').parent().removeClass('is-hidden')
-//         }
-//         $('.main__holder').toggleClass('ready');
-//     }
-// });
