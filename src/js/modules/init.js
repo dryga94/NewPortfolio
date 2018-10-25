@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("load", function (event) {
     let DEBUG = true;
 
     // GOOGLE MAP INIT
